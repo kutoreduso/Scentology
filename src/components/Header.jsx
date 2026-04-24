@@ -3,15 +3,15 @@
 const HeaderSection = () => {
     return(
         <>
-            <header>
-                <div className="">
-                    <img 
-                    src="/img/swyi.png"
-                    alt=""
-                    className="object-cover w-full h-full"
-                    />
-                </div>
-            </header>
+           <header className="w-full h-[100dvh]">
+    <div className="w-full h-full">
+        <img 
+            src="/img/swyi.png"
+            alt="Hero image"
+            className="object-cover w-full h-full"
+        />
+    </div>
+</header>
         </>
     )
 }

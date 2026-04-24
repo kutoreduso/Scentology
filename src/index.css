@@ -1,6 +1,6 @@
 @font-face {
   font-family: Satoshi;
-  src: url('../public/font/Satoshi-Variable.ttf');
+  src: url('/font/Satoshi-Variable.ttf');
 }
 
 @import "tailwindcss";
