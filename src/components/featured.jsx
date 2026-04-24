@@ -4,7 +4,7 @@ const featuredBrands = [
 {
         id: 1,
         brand: "Valentino",
-        collection: "Born In Roma",
+        collection: "Timeless Beauty, Boldly Reimagined Scent.",
         image: "/img/valentino1.png",
         link: "#"
     },
@@ -12,17 +12,16 @@ const featuredBrands = [
 
         id: 2,
         brand: "Acqua Di Gio",
-        collection:"Explore the gentleman Smell on the collection",
+        collection:"Refined Strength, Naturally Inspired Scent.",
         image :"/img/adg.avif",
         link:"#",
 },
 {
         id: 3,
-        brand:"",
-        
-
-
-
+        brand:"Jean Paul Gaultier",
+        collection:"Sweet, Seductive, And Unapologetically Loud.",
+        image: "/img/jpg.jpg",
+        link:"#",
 }
 
 
@@ -47,6 +46,7 @@ const FeaturedSection = () => {
             {/* Title Section */}
             <div className="container mx-auto lg:mt-15 mb-6 lg:mb-10 space-y-5">
                 <h1 className="text-center font-thin uppercase lg:text-4xl text-2xl">Featured Brand</h1>
+                <p className=" text-center font-thin lg:text-2xl p-5" >A curated selection of the world's most iconic olfactory houses, chosen for their uncompromising quality and timeless appeal.</p>
             </div>
 
             {/* THE CAROUSEL CONTAINER */}

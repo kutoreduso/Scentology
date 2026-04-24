@@ -27,16 +27,18 @@ const CollectionSection = () => {
 
     {/* CARDS SECTION */}
     {/* Added: lg:overflow-visible, lg:flex-wrap, lg:snap-none to let cards sit normally on desktop */}
-    <div className="flex lg:flex-row lg:flex-wrap lg:justify-start overflow-x-auto lg:overflow-visible snap-x snap-mandatory lg:snap-none gap-4 pb-4 px-4 lg:px-0 scrollbar-hide">
-        {prdimg.map((product) => (
-            <CardsUI 
-                key={product.id}
-                prdname={product.prdname}
-                priceprd={product.priceprd}
-                prdpic={product.prdpic}
-            />
-        ))}
-    </div>
+<div className="flex lg:flex-row lg:flex-wrap lg:justify-start overflow-x-auto lg:overflow-visible snap-x snap-mandatory lg:snap-none gap-4 pb-4 px-4 lg:px-0 scrollbar-hide">
+    {prdimg.map((product) => (
+        <CardsUI 
+            key={product.id}
+            prdname={product.prdname}
+            priceprd={product.priceprd}
+            prdpic={product.prdpic}
+            // Pass the second image here
+            hoverPic={product.hoverPic} 
+        />
+    ))}
+</div>
 
     {/* MOBILE "Shop All": Visible on mobile (flex), hidden on desktop (lg:hidden) */}
     <div className="mt-8 flex justify-center lg:hidden font-satoshi text-[20px]">
