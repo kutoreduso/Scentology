@@ -17,7 +17,7 @@ const CardsUI = ({prdname, priceprd,prdpic,hoverPic}) => {
         <>
             <div className="group flex-none snap-center lg:w-60 w-60 cursor-pointer">
     {/* Image Container */}
-    <div className="relative overflow-hidden border border-[#A1C2BD] aspect-square">
+    <div className="relative overflow-hidden aspect-square ">
         {/* Primary Image (Default) */}
         <img 
             src={prdpic} 
@@ -39,7 +39,7 @@ const CardsUI = ({prdname, priceprd,prdpic,hoverPic}) => {
         <h1 className="text-gray-600 font-bold">{priceprd}</h1>
         
         {/* Button with slide-up effect (Optional Premium Touch) */}
-        <button className="w-full bg-[#19183B] text-[#E7F2EF] uppercase font-satoshi p-2 text-xs transition-all duration-300 hover:bg-[#252458]">
+        <button className="w-full bg-[#A1C2BD] text-[#19183B] uppercase font-satoshi p-2 text-xs transition-all duration-300 hover:bg-[#708993] hover:text-[#E7F2EF]">
             Add To Cart
         </button>
     </div>
