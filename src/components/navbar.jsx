@@ -1,10 +1,6 @@
-const Icon = [
-    {id:1 ,iconImg:""}
 
-
-]
 import React, { useState } from 'react';
-
+import { Link } from 'react-router-dom';
 const NavbarSection = () => {
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
     const [isFragrancesOpen, setIsFragrancesOpen] = useState(false);
@@ -21,11 +17,11 @@ const NavbarSection = () => {
                     >
                         Menu
                     </button>
-
-                    <h1 className="font-satoshi uppercase font-bold justify-self-center lg:justify-self-start lg:-order-1 text-center">
-                        SCENT ATELIER
-                    </h1>
-                    
+                <Link to="/" className="justify-self-center lg:justify-self-start lg:-order-1">
+    <h1 className="font-satoshi uppercase font-bold text-center">
+        SCENT ATELIER
+    </h1>
+</Link>
                     <div className="hidden lg:flex justify-center relative lg:space-x-6">
                         <div className="group inline-block">
                             <a href="" className="font-medium">Fragrances</a>
