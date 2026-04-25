@@ -6,7 +6,7 @@ const NavbarSection = () => {
     const [isFragrancesOpen, setIsFragrancesOpen] = useState(false);
 
     return (
-        <nav className="text-[#19183B] sticky top-0 bg-[#E7F2EF]">
+        <nav className="text-[#19183B] sticky top-0 bg-[#E7F2EF] z-99">
 
             <div className="lg:p-8 p-4">
                 <div className="grid grid-cols-3 items-center font-satoshi">
