@@ -13,7 +13,7 @@ const FooterSection = () => {
                 </div>
 
                 <div className="flex flex-col w-full lg:w-[50%] gap-4">
-                    <h3 className="text-[16px] lg:text-[18px] font-medium">Join the Scentology Community</h3>
+                    <h3 className="text-[16px] lg:text-[18px] font-medium">Join the SCENT ATELIER Community</h3>
                     
                     {/* Input & Button Container: Stack on mobile, row on tablet/desktop */}
                     <div className="flex flex-col sm:flex-row gap-3">
@@ -69,7 +69,7 @@ const FooterSection = () => {
             {/* BOTTOM SECTION: Copyright */}
             <div className="container mx-auto px-4 lg:px-8 pb-8 pt-4">
                 <p className="uppercase text-[12px] lg:text-[14px] text-center md:text-left opacity-60 tracking-widest">
-                    © {new Date().getFullYear()} SCENTOLOGY
+                    © {new Date().getFullYear()} SCENT ATELIER
                 </p>
             </div>
             

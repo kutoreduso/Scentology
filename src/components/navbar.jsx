@@ -19,7 +19,7 @@ const NavbarSection = () => {
                     </button>
 
                     <h1 className="font-satoshi uppercase font-bold justify-self-center lg:justify-self-start lg:-order-1">
-                        Scentology
+                        SCENT ATELIER
                     </h1>
                     
                     <div className="hidden lg:flex justify-center relative lg:space-x-6">
@@ -84,13 +84,12 @@ const NavbarSection = () => {
                 
                 {/* Mobile Header */}
                 <div className="flex justify-between items-center p-4 border-b border-[#19183B]/10">
-                    <h1 className="font-satoshi uppercase font-bold text-xl tracking-wider text-[#19183B]">Scentology</h1>
+                    <h1 className="font-satoshi uppercase font-bold text-xl tracking-wider text-[#19183B]">SCENT ATELIER</h1>
                     <button onClick={() => setIsMobileMenuOpen(false)} className="font-satoshi font-medium uppercase tracking-wider text-sm focus:outline-none text-[#19183B]">
                         Close
                     </button>
                 </div>
 
-                {/* Scentology Content Area */}
                 <div className="flex-1 overflow-y-auto p-6 flex flex-col space-y-6 font-satoshi">
                     
                     {/* Fragrances Dropdown */}
