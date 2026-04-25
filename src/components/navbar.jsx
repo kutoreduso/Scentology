@@ -1,4 +1,8 @@
+const Icon = [
+    {id:1 ,iconImg:""}
 
+
+]
 import React, { useState } from 'react';
 
 const NavbarSection = () => {
@@ -18,7 +22,7 @@ const NavbarSection = () => {
                         Menu
                     </button>
 
-                    <h1 className="font-satoshi uppercase font-bold justify-self-center lg:justify-self-start lg:-order-1">
+                    <h1 className="font-satoshi uppercase font-bold justify-self-center lg:justify-self-start lg:-order-1 text-center">
                         SCENT ATELIER
                     </h1>
                     
@@ -74,8 +78,18 @@ const NavbarSection = () => {
                     </div>
                     
                     <div className="flex justify-end space-x-6 justify-self-end">
-                        <a href="">Icon</a>
-                        <a href="">Icon</a>
+                        <a href="w-[2px]">
+                            <img src="/icon/user.png"
+                            alt=""
+                            className="w-[25px]"
+                            />
+                        </a>
+                        <a href="">
+                             <img src="/icon/shopping-bag.png"
+                            alt=""
+                            className="w-[25px]"
+                            />
+                        </a>
                     </div>
                 </div>
             </div>
