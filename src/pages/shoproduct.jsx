@@ -3,7 +3,7 @@ import { useState } from "react"
 
 const ShopProduct = () => {
     const [isOpen, setIsOpen] = useState(false)
-    const [isMEOpen, setIsMeOpen] = useState(false)
+    const [isMeOpen, setIsMeOpen] = useState(false)
 
     return (
         <>
@@ -44,11 +44,18 @@ const ShopProduct = () => {
 
     {/* Column for Categories */}
     <div className="flex flex-col mt-4 font-satoshi lg:text-[20px]">
-        <button 
-        onClick={()=> setIsMeOpen(true)}
-        className="text-left">
-            Middle Eastern
-        </button>
+    {/* Middle Eastern Button */}
+    <button 
+        onClick={() => setIsMeOpen(!isMeOpen)} 
+        className="text-left w-full"
+    >
+        Middle Eastern
+    </button>
+
+    {/* Expanded Content: This pushes everything below it down */}
+    {isMeOpen && (
+        <div className=""></div>
+    )}
     </div>
     <div 
     className="flex flex-col mt-4 font-satoshi lg:text-[20px]">
