@@ -24,11 +24,11 @@ const CollectionSection = () => {
         {/* DESKTOP "Shop All": Hidden on mobile (hidden), visible on desktop (lg:block) */}
         <div className="ml-auto hidden lg:block">
     <Link 
-        to="/shoproduct" 
-        className="w-fit relative after:absolute after:bottom-0 after:left-0 after:h-[1px] after:w-0 hover:after:w-full after:bg-[#19183B] after:transition-all after:duration-300"
-    >
-        Shop All Product
-    </Link>
+    to="/shoproduct" 
+    className="w-fit relative after:absolute after:bottom-0 after:left-0 after:h-[1px] after:w-0 lg:hover:after:w-full after:bg-[#19183B] after:transition-all after:duration-300"
+>
+    Shop All Product
+</Link>
 </div>
     </div>
 
