@@ -90,7 +90,7 @@ const ShopProduct = () => {
                         {CardsProduct.map((productbrand)=> (
                             <Productsection 
                             key={productbrand.brandid}
-                        brandName={productbrand.brandname}
+                        brandname={productbrand.brandname}
                             brandprice={productbrand.brandprice}
                             brandpic={productbrand.brandpic}
                             hoverbrand={productbrand.hoverbrand}
