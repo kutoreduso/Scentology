@@ -6,7 +6,7 @@ const HeaderSection = () => {
            <header className="w-full h-[100dvh]">
     <div className="w-full h-full">
         <img 
-            src="/img/swyi.png"
+            src="/img/creed.jpg"
             alt="Hero image"
             className="object-cover w-full h-full"
         />

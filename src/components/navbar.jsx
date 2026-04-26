@@ -1,6 +1,7 @@
 
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+import Aboutussection from '../pages/aboutusUI';
 import ContactSection from '../pages/contactus';
 const NavbarSection = () => {
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -70,7 +71,9 @@ const NavbarSection = () => {
                             {/* --- END EXACT DESKTOP MEGA MENU --- */}
                             
                         </div>
-                        <a href="" className="font-medium">About</a>
+                        <Link to="/aboutusUI">
+                        <h1 className="font-medium">About</h1>
+                        </Link>
                         <Link to="/contactus">
                         <h1 className="font-medium">Contact Us</h1>
                         </Link>
@@ -150,7 +153,9 @@ const NavbarSection = () => {
                         </div>
                     </div>
 
-                    <a href="" className="text-2xl font-medium text-[#19183B]">About</a>
+                    <Link to="/aboutusUI">
+                        <h1 className="font-medium">About</h1>
+                        </Link>
                    <Link to="/contactus">
                         <h1 className="font-medium">Contact Us</h1>
                         </Link>
