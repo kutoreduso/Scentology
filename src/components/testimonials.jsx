@@ -28,7 +28,7 @@ const TestimonialSection = () => {
             
             {/* Section Header */}
             <div className="text-center max-w-2xl mx-auto mb-16">
-                <h2 className="text-3xl font-light tracking-widest text-gray-900 uppercase mb-4">
+                <h2 className="text-3xl lg:text-4xl font-light tracking-widest text-gray-900 uppercase mb-4">
                     Words from our clients
                 </h2>
                 <div className="w-12 h-[1px] bg-gray-900 mx-auto"></div>
