@@ -9,7 +9,7 @@ export const CardsProduct = [
     { brandid: 7, brandname: "Club de Nuit Intense Man", brandprice: "P2200", brandpic: "./prd/cdnim.jpg", hoverbrand: "/prd/cdnim1.jpg", brandcall: "Armaf" },
     { brandid: 8, brandname: "Le Male Elixir", brandprice: "P6500", brandpic: "./prd/le-male-elixir.jpg", hoverbrand: "/prd/le-male-elixir1.jpg", brandcall: "Jean Paul Gaultier" },
     { brandid: 9, brandname: "Turathi Blue", brandprice: "P1900", brandpic: "./prd/turathi.jpg", hoverbrand: "/prd/turathi1.jpg", brandcall: "Afnan" },
-    { brandid: 10, brandname: "K Khamrah", brandprice: "P1600", brandpic: "./prd/khamrah.jpg", hoverbrand: "/prd/khamrah1.jpg", brandcall: "Lattafa" },
+    { brandid: 10, brandname: "Khamrah", brandprice: "P1600", brandpic: "./prd/khamrah.jpg", hoverbrand: "/prd/khamrah1.jpg", brandcall: "Lattafa" },
     { brandid: 11, brandname: "YSL Myself EDP", brandprice: "P6200", brandpic: "./prd/ysl-myself.jpg", hoverbrand: "/prd/ysl-myself1.jpg", brandcall: "Yves Saint Laurent" },
     { brandid: 12, brandname: "Azzaro The Most Wanted", brandprice: "P5800", brandpic: "./prd/azzaro.png", hoverbrand: "/prd/azzaro1.png", brandcall: "Azzaro" },
     { brandid: 13, brandname: "Rayhaan Lion", brandprice: "P1650", brandpic: "./prd/lion.png", hoverbrand: "/prd/lion1.png", brandcall: "Rayhaan" },
@@ -40,37 +40,38 @@ gsap.from(".product-card", {
 });
     return(
         <>
-      <div>
-            <div className="group flex-none snap-center lg:w-60 w-60 cursor-pointer product-card">
-    {/* Image Container */}
-    <div className="relative overflow-hidden aspect-square product-card">
-        {/* Primary Image (Default) */}
-        <img 
-            src={brandpic} 
-            alt={brandname}
-            className="bg-trasparent mix-blend-multiply absolute inset-0 object-cover w-full h-full transition-opacity duration-500 group-hover:opacity-0"
-        />
-        
-        {/* Secondary Image (Visible on Hover) */}
-        <img 
-            src={hoverbrand} // Add your hover image variable here
-            alt={`${brandname} detail`}
-           className="bg-trasparent mix-blend-multiply absolute inset-0 object-cover w-full h-full transition-all duration-700 opacity-0 group-hover:opacity-100 group-hover:scale-90"
-        />
-    </div>
+     <div>
+                <div className="group flex-none snap-center lg:w-60 w-full cursor-pointer mix-blend-multiply">
+                    {/* Image Container */}
+                    <div className="relative overflow-hidden aspect-square mix-blend-multiply">
+                        {/* Primary Image (Default) - Added mix-blend-multiply */}
+                        <img 
+                            src={brandpic} 
+                            alt={brandname}
+                            className="absolute inset-0 object-cover w-full h-full transition-opacity duration-500 group-hover:opacity-0 mix-blend-multiply bg-transparent"
+                        />
+                        
+                        {/* Secondary Image (Visible on Hover) - Added mix-blend-multiply */}
+                        <img 
+                            src={hoverbrand} 
+                            alt={`${brandname} detail`}
+                            className="absolute inset-0 object-cover w-full h-full transition-all duration-700 opacity-0 group-hover:opacity-100 group-hover:scale-90 mix-blend-multiply bg-transparent"
+                        />
+                    </div>
 
-    {/* Text Content */}
-    <div className="mt-2 space-y-1">
-        <h1 className="font-medium text-sm">{brandname}</h1>
-        <h1 className="text-gray-600 font-bold">{brandprice}</h1>
-        
-        {/* Button with slide-up effect (Optional Premium Touch) */}
-        <button className="w-full bg-[#A1C2BD] text-[#19183B] uppercase font-satoshi p-2 text-xs transition-all duration-300 hover:bg-[#708993] hover:text-[#E7F2EF]">
-            Add To Cart
-        </button>
-    </div>
-</div>
-</div>
+                    {/* Text Content */}
+                    <div className="mt-2 space-y-1">
+                        <h1 className="lg:font-medium font-normal text-[11px] lg:text-sm ">{brandname}</h1>
+                        <h1 className="text-gray-600 font-bold">{brandprice}</h1>
+                        
+                        {/* Button */}
+                        <button className="w-full bg-[#A1C2BD] text-[#19183B] uppercase font-satoshi p-2 text-xs transition-all duration-300 hover:bg-[#708993] hover:text-[#E7F2EF]">
+                            Add To Cart
+                        </button>
+                    </div>
+                </div>
+            </div>
+
         </>
     )
 }

@@ -19,7 +19,7 @@ const FooterSection = () => {
                     <div className="flex flex-col sm:flex-row gap-3">
                         <input 
                             type="email" 
-                            className="bg-[#E7F2EF] w-full lg:w-90 h-12 lg:h-10 text-[#19183B] px-4 outline-none placeholder:text-[#19183B]/60" 
+                            className="bg-white w-full lg:w-90 h-12 lg:h-10 text-[#19183B] px-4 outline-none placeholder:text-[#19183B]/60" 
                             placeholder="Email Address"  
                         />
                         <button className="p-2 border-2 border-[#E7F2EF] w-full sm:w-40 lg:w-60 h-12 lg:h-10 text-sm uppercase hover:bg-[#E7F2EF] hover:text-[#19183B] transition-colors duration-300">

@@ -6,7 +6,7 @@ const NavbarSection = () => {
     const [isFragrancesOpen, setIsFragrancesOpen] = useState(false);
 
     return (
-        <nav className="text-[#19183B] sticky top-0 bg-[#E7F2EF] z-99">
+        <nav className="text-[#19183B] sticky top-0 bg-white z-99">
 
             <div className="lg:p-8 p-4">
                 <div className="grid grid-cols-3 items-center font-satoshi">
@@ -26,7 +26,7 @@ const NavbarSection = () => {
                         <div className="group inline-block">
                             <a href="" className="font-medium">Fragrances</a>
                         
-                            <div className="lg:pb-20 absolute w-screen left-1/2 -translate-x-1/2 bg-[#E7F2EF] top-full z-50 opacity-0 invisible translate-y-4 transition-all duration-300 ease-out group-hover:opacity-100 group-hover:visible group-hover:translate-y-0">
+                            <div className="lg:pb-20 absolute w-screen left-1/2 -translate-x-1/2 bg-white top-full z-50 opacity-0 invisible translate-y-4 transition-all duration-300 ease-out group-hover:opacity-100 group-hover:visible group-hover:translate-y-0">
                                 <div className="container mx-auto lg:mt-10 flex lg:flex-row lg:space-x-6 lg:gap-6">
                                     <div className="font-satoshi space-y-3 flex lg:flex-col">
                                         <a href="#" className="w-fit relative after:absolute after:bottom-0 after:left-0 after:h-[1px] after:w-0 hover:after:w-full after:bg-[#19183B] after:transition-all after:duration-300 lg:text-3xl font-medium">Peoples Favorites</a>

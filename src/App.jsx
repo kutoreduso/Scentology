@@ -14,7 +14,7 @@ function App() {
   return (
     <BrowserRouter>
       {/* The background color wrapper for the whole app */}
-      <div className="bg-[#E7F2EF] min-h-screen flex flex-col">
+      <div className="bg-white min-h-screen flex flex-col">
         
         {/* These show on EVERY page */}
         <AnnouncementSection />
