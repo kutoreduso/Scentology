@@ -1,7 +1,9 @@
 
 
-import ProductCard from "../assets/product"
 import { useState } from "react"
+import ProductSection, { CardsProduct } from "../assets/product";
+import Productsection from "../assets/product";
+
 
 const ShopProduct = () => {
     // 1. ADD THIS STATE (It was missing)
@@ -83,14 +85,23 @@ const ShopProduct = () => {
                     >
                         Filter
                     </button> 
-
+{/* brandname,brandprice,brandpic,hoverbrand */}
                     <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 mt-5 gap-x-3 gap-y-8">
-                        <ProductCard/>
-                        <ProductCard/>
-                        <ProductCard/>
-                        <ProductCard/>
-                        <ProductCard/>
-                        <ProductCard/>
+                        {CardsProduct.map((productbrand)=> (
+                            <Productsection 
+                            key={productbrand.brandid}
+                        brandName={productbrand.brandname}
+                            brandprice={productbrand.brandprice}
+                            brandpic={productbrand.brandpic}
+                            hoverbrand={productbrand.hoverbrand}
+                            
+            
+                            />
+
+                        ))}
+
+
+
                     </div>
                 </div>
             </div>
