@@ -1,6 +1,7 @@
 
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+import ContactSection from '../pages/contactus';
 const NavbarSection = () => {
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
     const [isFragrancesOpen, setIsFragrancesOpen] = useState(false);
@@ -70,7 +71,9 @@ const NavbarSection = () => {
                             
                         </div>
                         <a href="" className="font-medium">About</a>
-                        <a href="" className="font-medium">Contact Us</a>
+                        <Link to="/contactus">
+                        <h1 className="font-medium">Contact Us</h1>
+                        </Link>
                     </div>
                     
                     <div className="flex justify-end space-x-6 justify-self-end">
@@ -148,7 +151,9 @@ const NavbarSection = () => {
                     </div>
 
                     <a href="" className="text-2xl font-medium text-[#19183B]">About</a>
-                    <a href="" className="text-2xl font-medium text-[#19183B]">Contact Us</a>
+                   <Link to="/contactus">
+                        <h1 className="font-medium">Contact Us</h1>
+                        </Link>
                 </div>
             </div>
 
