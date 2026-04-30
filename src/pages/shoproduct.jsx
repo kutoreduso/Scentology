@@ -5,7 +5,7 @@ const ShopProduct = () => {
     const [selectedBrands, setSelectedBrands] = useState([]);
     const [isOpen, setIsOpen] = useState(false);
     const [isMeOpen, setIsMeOpen] = useState(false);
-
+    const [isDesignerOpen, setDesignerOpen] = useState(false)
     const handleBrandChange = (brandName, isChecked) => {
         if (isChecked) {
             setSelectedBrands([...selectedBrands, brandName]);
@@ -27,7 +27,17 @@ const ShopProduct = () => {
         {id:4, brandMe:"Khadlaj"},
         {id:5, brandMe:"Rayhaan"}
     ]
+    const DesignerBrand = [
 
+        {id:1, brandDesigner:"Jean Paul Gaultier"},
+        {id:2, brandDesigner:"Yves Saint Laurent"},
+        {id:3, brandDesigner:"Valentino"},
+        {id:4, brandDesigner:"Dolce & Gabbana"},
+        {id:5, brandDesigner:"Emporio Armani"}
+
+
+
+    ]
     return (
         <>
             {/* Overlay */}
@@ -63,13 +73,41 @@ const ShopProduct = () => {
                                             onChange={(e) => handleBrandChange(item.brandMe, e.target.checked)}
                                             className="w-4 h-4 accent-black" 
                                         />
-                                        <span className="text-base opacity-70 group-hover:opacity-100 transition-all">
+                                        <span className="text-base opacity-70 group-hover:opacity-100 transition-all duration-300">
                                             {item.brandMe}
                                         </span>
                                     </label>
                                 ))}
                             </div>
                         )}
+                    </div>
+                    {/* Designer */}
+                    <div className="flex flex-col mt-8 font-satoshi text-[18px]">
+                            <button 
+                            onClick={() => setDesignerOpen(!isDesignerOpen)} 
+                            className="text-left w-full flex justify-between items-center border-b border-black/10 pb-2"
+                        >
+                            Designer Fragrances
+                            <span>{isDesignerOpen ? "-" : "+"}</span>
+                        </button>
+                    {isDesignerOpen && (
+                        <div className="flex flex-col pl-2 mt-4 space-y-4">
+                        {DesignerBrand.map((Designeritem) => (
+                            <label key={Designeritem.id} className="flex items-center gap-3 cursor-pointer group">
+                                <input 
+                                type="checkbox"
+                                checked={selectedBrands.includes(Designeritem.brandDesigner)}
+                                onChange={(i) => handleBrandChange (Designeritem.brandDesigner, i.target.checked)}
+                                className="w-4 h-4 accent-black"
+                                />
+                                <span className="text-base opacity-70 group-hover:opacity-100 transition-all duration-300">
+                                            {Designeritem.brandDesigner}
+                                        </span>
+                            </label>
+                        ))}
+                    </div>
+
+                    )}
                     </div>
                 </div>
             </div>
